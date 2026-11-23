@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  /* ---------- Mobile navigation ---------- */
+  /* Mobile navigation */
   const toggle = document.querySelector('[data-nav-toggle]');
   const nav = document.getElementById('primary-nav');
 
@@ -32,7 +32,7 @@
     });
   }
 
-  /* ---------- Article filtering (articles.html) ---------- */
+  /* Article filtering (articles.html) */
   const grid = document.querySelector('[data-article-grid]');
 
   if (grid) {
@@ -59,12 +59,8 @@
         if (matches) visible += 1;
       });
 
-      if (count) {
-        count.textContent = visible + (visible === 1 ? ' article' : ' articles');
-      }
-      if (empty) {
-        empty.classList.toggle('is-visible', visible === 0);
-      }
+      if (count) count.textContent = visible + (visible === 1 ? ' article' : ' articles');
+      if (empty) empty.classList.toggle('is-visible', visible === 0);
     }
 
     chips.forEach(function (chip) {
@@ -87,7 +83,7 @@
     applyFilters();
   }
 
-  /* ---------- Reveal on scroll ---------- */
+  /* Reveal on scroll */
   const revealItems = Array.prototype.slice.call(document.querySelectorAll('[data-reveal]'));
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -108,13 +104,13 @@
     }
   }
 
-  /* ---------- Placeholder links (files not published yet) ---------- */
+  /* Placeholder links */
   document.addEventListener('click', function (event) {
     const placeholder = event.target.closest('[data-pending]');
     if (placeholder) event.preventDefault();
   });
 
-  /* ---------- Footer year ---------- */
+  /* Footer year */
   const year = new Date().getFullYear();
   document.querySelectorAll('[data-year]').forEach(function (el) {
     el.textContent = String(year);
