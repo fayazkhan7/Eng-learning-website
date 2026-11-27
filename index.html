@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Learn English with Fayaz</title>
+  <meta name="description" content="Structured English courses for speaking, writing, listening and vocabulary, from beginner to advanced.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="topbar">
+    <div class="container">
+      <p>New lessons every week. Free to start.</p>
+      <a href="#/contact">Contact us</a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container bar">
+      <a class="brand" href="#/" aria-label="Learn English with Fayaz, home">
+        <span class="logo" aria-hidden="true">LE</span>
+        <span>Learn English <b>with Fayaz</b></span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav id="nav" class="nav" aria-label="Main">
+        <a href="#/" data-route="home">Home</a>
+        <a href="#/courses" data-route="courses">Courses</a>
+        <a href="#/about" data-route="about">About Us</a>
+        <a href="#/resources" data-route="resources">Resources</a>
+        <a href="#/contact" data-route="contact">Contact</a>
+        <a class="btn btn-small" href="#/courses">Start learning</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+
+    <!-- HOME -->
+    <section class="page" data-page="home">
+      <div class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="kicker">Online English courses</p>
+            <h1>Speak English with clarity and confidence.</h1>
+            <p class="lead">Structured courses, clear explanations and daily practice. Learn the English you need for work, study and everyday life.</p>
+            <div class="actions">
+              <a class="btn btn-light" href="#/courses">Explore courses</a>
+              <a class="btn btn-outline" href="#/about">About us</a>
+            </div>
+          </div>
+          <figure class="redpen" aria-labelledby="rp-cap">
+            <p class="rp-label">Sample lesson: fix the mistake</p>
+            <p class="rp-sentence">
+              <span class="wrong">She don’t like coffee.</span>
+              <span class="fix" hidden>She <mark>doesn’t</mark> like coffee.</span>
+            </p>
+            <p class="rp-note" id="rp-note">With he, she and it, the verb needs its third-person form.</p>
+            <div class="rp-controls">
+              <button class="btn btn-small" id="rp-toggle" aria-pressed="false">Show the correction</button>
+              <button class="btn btn-small btn-ghost" id="rp-next">Next example</button>
+            </div>
+            <figcaption id="rp-cap">Every lesson ends with practice like this.</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="container">
+          <h2>How it works</h2>
+          <ol class="steps">
+            <li><h3>Choose your level</h3><p>Pick Beginner, Intermediate or Advanced. Each level follows the CEFR scale.</p></li>
+            <li><h3>Follow the course</h3><p>Short lessons with examples, audio and exercises you can finish in 15 minutes.</p></li>
+            <li><h3>Practice and review</h3><p>Check your answers, review mistakes and build a daily habit.</p></li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="section tint">
+        <div class="container">
+          <div class="head-row"><h2>Popular courses</h2><a href="#/courses">View all courses</a></div>
+          <div class="grid3" id="featured"></div>
+        </div>
+      </div>
+
+      <div class="cta">
+        <div class="container">
+          <h2>Ready to start?</h2>
+          <p>Join the weekly list and get one practical lesson in your inbox.</p>
+          <a class="btn btn-light" href="#/contact">Join the list</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- COURSES -->
+    <section class="page" data-page="courses" hidden>
+      <div class="page-head"><div class="container"><h1>Courses</h1><p class="lead">Choose a level, then pick the skill you want to improve.</p></div></div>
+      <div class="section">
+        <div class="container">
+          <div class="filters" role="group" aria-label="Filter courses by level">
+            <button class="chip" data-filter="all" aria-pressed="true">All levels</button>
+            <button class="chip" data-filter="Beginner" aria-pressed="false">Beginner</button>
+            <button class="chip" data-filter="Intermediate" aria-pressed="false">Intermediate</button>
+            <button class="chip" data-filter="Advanced" aria-pressed="false">Advanced</button>
+          </div>
+          <div class="grid3" id="course-grid" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="page" data-page="about" hidden>
+      <div class="page-head"><div class="container"><h1>About us</h1><p class="lead">Simple explanations, real examples and regular practice.</p></div></div>
+      <div class="section">
+        <div class="container two-col">
+          <div>
+            <h2>Our mission</h2>
+            <p>We help learners use English with confidence. Every course is built around what you will actually say, write and hear, not memorized rules.</p>
+            <p>Replace this text with your own story, teaching experience and approach.</p>
+          </div>
+          <div class="panel">
+            <h3>Meet Fayaz</h3>
+            <p>Founder and teacher. Add a short bio, your qualifications and a photo here.</p>
+            <a class="btn btn-small" href="#/contact">Get in touch</a>
+          </div>
+        </div>
+      </div>
+      <div class="section tint">
+        <div class="container">
+          <h2>How we teach</h2>
+          <div class="grid3">
+            <article class="card"><h3>Clear</h3><p>One idea per lesson, explained in plain language.</p></article>
+            <article class="card"><h3>Practical</h3><p>Examples from work, travel and daily conversation.</p></article>
+            <article class="card"><h3>Consistent</h3><p>Short daily practice beats long occasional study.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESOURCES -->
+    <section class="page" data-page="resources" hidden>
+      <div class="page-head"><div class="container"><h1>Resources</h1><p class="lead">Free tools and answers to help you practice between lessons.</p></div></div>
+      <div class="section">
+        <div class="container two-col">
+          <article class="word-card" aria-live="polite">
+            <p class="kicker dark">Word of the day</p>
+            <p class="word" id="w-word"></p>
+            <p class="pos" id="w-pos"></p>
+            <p id="w-def"></p>
+            <p class="example" id="w-ex"></p>
+            <button class="btn btn-small" id="word-next">Show another word</button>
+          </article>
+          <div>
+            <h2>Frequently asked questions</h2>
+            <details><summary>Which level should I choose?</summary><p>Start with the lowest level that feels slightly hard. You can switch at any time.</p></details>
+            <details><summary>How much time do I need each day?</summary><p>Fifteen minutes is enough if you practice every day.</p></details>
+            <details><summary>Are the lessons free?</summary><p>Add your pricing details here.</p></details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="page" data-page="contact" hidden>
+      <div class="page-head"><div class="container"><h1>Contact us</h1><p class="lead">Ask a question or join the weekly lesson list.</p></div></div>
+      <div class="section">
+        <div class="container two-col">
+          <form id="contact-form" novalidate>
+            <div class="field"><label for="name">Name</label><input id="name" name="name" autocomplete="name" required><p class="error" id="name-err" role="alert"></p></div>
+            <div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" required><p class="error" id="email-err" role="alert"></p></div>
+            <div class="field"><label for="topic">I’m interested in</label>
+              <select id="topic" name="topic"><option>Joining the weekly list</option><option>Beginner courses</option><option>Intermediate courses</option><option>Advanced courses</option><option>Something else</option></select></div>
+            <div class="field"><label for="msg">Message</label><textarea id="msg" name="msg" rows="4"></textarea></div>
+            <button class="btn" type="submit">Send message</button>
+            <p class="status" id="form-status" role="status"></p>
+          </form>
+          <div class="panel">
+            <h3>Contact details</h3>
+            <p>Email: add your address here<br>WhatsApp: add your number here<br>Hours: add your availability here</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container foot-grid">
+      <div><p class="brand-foot">Learn English <b>with Fayaz</b></p><p>Clear English lessons for everyday life, study and work.</p></div>
+      <nav aria-label="Footer"><h3>Explore</h3><a href="#/courses">Courses</a><a href="#/about">About Us</a><a href="#/resources">Resources</a><a href="#/contact">Contact</a></nav>
+      <nav aria-label="Levels"><h3>Levels</h3><a href="#/courses" data-filter-link="Beginner">Beginner</a><a href="#/courses" data-filter-link="Intermediate">Intermediate</a><a href="#/courses" data-filter-link="Advanced">Advanced</a></nav>
+    </div>
+    <div class="container legal"><p>© <span id="year">2026</span> Learn English with Fayaz. All rights reserved.</p></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
